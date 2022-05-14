@@ -3,6 +3,10 @@
     .play__wrapper{
         padding: 50px 92px;
 
+        @media screen and (max-width: 570px) {
+            padding: 50px 42px;
+        }
+
         .play__title{
             font-family: 'SF Pro Display', sans-serif;
             text-align: center;
@@ -16,6 +20,11 @@
                 font-size: 50px;
                 line-height: 60px;
                 color: $white_color;
+
+                @media screen and (max-width: 570px) {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
             }
 
             .play__subtitle{
@@ -25,6 +34,11 @@
                 line-height: 42px;
                 color: $white_color;
                 opacity: 0.5;
+
+                @media screen and (max-width: 570px) {
+                    font-size: 15px;
+                    line-height: 22px;
+                }
             }
         }
 
@@ -42,6 +56,14 @@
                 align-items: center;
                 margin-top: 50px;
 
+                @media screen and (max-width: 465px) {
+                    padding: 20px;
+                }
+
+                @media screen and (max-width: 1490px) {
+                    flex-direction: column;
+                }
+
                 .card_img{
                     width: 40%;
                     height: 320px;
@@ -54,6 +76,18 @@
                     align-items: center;
                     text-align: center;
 
+                    @media screen and (max-width: 750px) {
+                        height: 200px;
+                    }
+
+                    @media screen and (max-width: 465px) {
+                        height: 150px;
+                    }
+
+                    @media screen and (max-width: 1490px) {
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
 
                     .monsters{
                         position: relative;
@@ -63,7 +97,15 @@
                             width: 230px;
                             position: absolute;
                             right: 30px;
-                            top: 50px
+                            top: 50px;
+
+                            @media screen and (max-width: 750px) {
+                                width: 120px;
+                            }
+
+                            @media screen and (max-width: 465px) {
+                                width: 70px;
+                            }
                         }
                         .doggy{
                             position: absolute;
@@ -71,6 +113,16 @@
 
                             img{
                                 right: 0;
+
+                                @media screen and (max-width: 750px) {
+                                    right: 100px;
+                                }
+
+                                @media screen and (max-width: 465px) {
+                                    right: 150px;
+                                }
+
+                                
                             }
                         }
                     }
@@ -85,6 +137,9 @@
                 font-family: 'SF Pro Display', sans-serif;
                 padding-left: 30px;
 
+                @media screen and (max-width: 1490px) {
+                    width: 100%;
+                }
 
                 .title{
                     font-style: normal;
@@ -92,6 +147,11 @@
                     font-size: 30px;
                     line-height: 36px;
                     color: $white_color; 
+
+                    @media screen and (max-width: 570px) {
+                        font-size: 20px;
+                        line-height: 26px;
+                    }
                 }
 
                 .text{
@@ -103,6 +163,11 @@
                     flex-direction: column;
 
                     color: rgba(255, 255, 255, 0.6);
+
+                    @media screen and (max-width: 570px) {
+                        font-size: 14px;
+                        line-height: 19px;
+                    }
                 }
             }
         }
@@ -112,6 +177,26 @@
             flex-direction: row;
             width: 100%;
             height: auto;
+
+            @media screen and (max-width: 1490px) {
+                flex-direction: column;
+            }
+
+            .img_mini{
+                @media screen and (max-width: 860px) {
+                    display: flex;
+                    justify-content: center;
+                }
+                img{
+                    @media screen and (max-width: 860px) {
+                        margin-bottom: 10px;
+                    }
+
+                    @media screen and (max-width: 570px) {
+                        width: 30%;
+                    }
+                }
+            }
 
             .card_item{
                 width: 50%;
@@ -123,11 +208,25 @@
                 padding: 30px;
                 margin-top: 30px;
 
+                @media screen and (max-width: 1490px) {
+                    width: auto;
+                    margin: 30px 0px 0px 0px !important;
+    
+                }
+
+                @media screen and (max-width: 860px) {
+                    width: auto;
+                    flex-direction: column;
+                }
 
                 .infos__mini{
                     display: flex;
                     flex-direction: column;
                     padding-left: 20px;
+
+                    @media screen and (max-width: 860px) {
+                        text-align: center;
+                    }
 
                     .title{
                         font-family: 'SF Pro Display', sans-serif;
@@ -137,6 +236,11 @@
                         line-height: 36px;
                         color: $white_color;
                         margin-bottom: 10px;
+
+                        @media screen and (max-width: 570px) {
+                            font-size: 20px;
+                            line-height: 26px;
+                        }
                     }
 
                     .text{
@@ -148,6 +252,11 @@
                         display: flex;
                         align-items: center;
                         color: $white_color;
+
+                        @media screen and (max-width: 570px) {
+                            font-size: 18px;
+                            line-height: 23px;
+                        }
                         
                     }
                 }

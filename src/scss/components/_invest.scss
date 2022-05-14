@@ -1,0 +1,172 @@
+.invest{
+    background-color: #30298C;
+    width: 100%;
+    height: auto;
+
+    .invest__wrapper{
+        padding: 150px 92px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        @media screen and (max-width: 570px) {
+            padding: 100px 20px;
+        }
+
+        @media screen and (max-width: 1500px) {
+            flex-direction: column;
+        }
+
+        .invest__why{
+            display: flex;
+            flex-direction: column;
+            padding-right: 280px;
+            width: 40%;
+            justify-content: center;
+
+            @media screen and (max-width: 1500px) {
+                width: auto;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-right: 0;
+                margin-bottom: 50px;
+            }
+
+            .title{
+                font-family: 'SF Pro Display',sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 60px;
+                display: flex;
+                align-items: center;
+                color: #FFFFFF;
+                padding-bottom: 20px;
+
+                @media screen and (max-width: 570px) {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+
+            .sub_title{
+                font-family: 'SF Pro Display', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                display: flex;
+                align-items: center;
+                color: #FFFFFF;
+                opacity: 0.6;
+                padding-bottom: 20px;
+
+                @media screen and (max-width: 570px) {
+                    font-size: 10px;
+                    line-height: 14px;
+                }
+            }
+
+            .invest_btn{
+                background: #E11D2E;
+                border-radius: 10px;
+                padding: 25px 30px;
+                color: white;
+                border: none;
+                width: fit-content;
+            }
+        }
+
+        .invest__reasons{
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+
+
+            @media screen and (max-width: 1500px) {
+                width: auto;
+            }
+
+            .item_reason{
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+
+                @media screen and (max-width: 600px) {
+                    flex-direction: column;
+                }
+
+                .img{
+                    
+                    @media screen and (max-width: 600px) {
+                        width: 100%;
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding-bottom: 20px;
+                    }
+
+                    .quadro{
+                        width: 107px;
+                        height: 107px;
+                        background: #16001d;
+                        border-radius: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        i{
+                            transform: scale(1.9);
+                            z-index: 5;
+                        }
+                    }
+                }
+            }
+
+
+            .information{
+                padding-left: 15px;
+                display: flex;
+                flex-direction: column;
+                width: auto;
+                .title{
+                    font-family: 'SF Pro Display', sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 36px;
+                    color: white;
+                    margin-bottom: 10px;
+
+                    @media screen and (max-width: 570px) {
+                        font-size: 20px;
+                        line-height: 26px;
+                    }
+                }
+
+                .text{
+                    font-family: 'SF Pro Display', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 32px;
+                    line-height: 38px;
+                    color: #FFFFFF;
+                    opacity: 0.8;
+                    max-width: 1200px;
+
+                    @media screen and (max-width: 570px) {
+                        font-size: 22px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
