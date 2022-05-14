@@ -1,0 +1,195 @@
+.works{
+
+    .works__wrapper{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 80px;
+
+        @media screen and (max-width: 570px) {
+            padding: 0px 20px;
+        }
+
+        @media screen and (max-width: 400px) {
+            padding: 0px 10px;
+        }
+
+        .works__title{
+            width: 100%;
+            text-align: center;
+            font-family: 'SF Pro Display',sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 60px;
+            color: $white_color;
+
+            @media screen and (max-width: 570px) {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+
+        .works__card{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+
+            @media screen and (max-width: 1400px) {
+                flex-direction: column;  
+            }
+
+            // @media screen and (max-width: 570px) {
+            //     width: 90%;  
+            // }
+
+            .item_card{
+                width: 33.33%;
+                background: #384D70;
+                border-radius: 20px;
+                margin: 20px 34px;
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                height: fit-content;
+
+                @media screen and (max-width: 1400px) {
+                    width: auto;
+                }
+
+                .item__img{
+                    .quadro{
+                        width: 70px;
+                        height: 70px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: #E11D2E;
+                        border-radius: 10px;
+                        color: $white_color;
+
+                        animation: glowcard 6s infinite;
+                    }
+
+                    @keyframes glowcard {
+                        0%{
+                            box-shadow: 0 0 110px 1px rgb(129, 3, 3);                        
+                        }
+                        50%{
+                            box-shadow: 0 0 110px 20px rgb(129, 3, 3);                        
+                        }
+                        100%{
+                            box-shadow: 0 0 110px 1px rgb(129, 3, 3);                        
+                        }
+                    }
+
+                    .quadro-yellow{
+                        width: 70px;
+                        height: 70px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: #FF9429;
+                        border-radius: 10px;
+                        color: $white_color;
+                        animation: glowingcard3 3s infinite;
+                    }
+
+                    @keyframes glowingcard3 {
+                        0%{
+                            box-shadow: 0 0 110px 1px rgb(160, 157, 2);                        
+                        }
+                        50%{
+                            box-shadow: 0 0 110px 20px rgb(160, 157, 2);                        
+                        }
+                        100%{
+                            box-shadow: 0 0 110px 1px rgb(160, 157, 2);                        
+                        }
+                    }
+
+                    .quadro-blue{
+                        width: 70px;
+                        height: 70px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: #0096F2;
+                        border-radius: 10px;
+                        color: $white_color;
+                        animation: glowingcard4 5s infinite;
+                    }
+
+                    @keyframes glowingcard4 {
+                        0%{
+                            box-shadow: 0 0 110px 1px rgb(57, 90, 151);                        
+                        }
+                        50%{
+                            box-shadow: 0 0 110px 20px rgb(1, 58, 163);                        
+                        }
+                        100%{
+                            box-shadow: 0 0 110px 1px rgb(57, 90, 151);                        
+                        }
+                    }
+
+                    i{
+                        transform: scale(1.2);
+                    }
+                }
+
+                .item__title{
+                    font-family: 'SF Pro Display', sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 35px;
+                    color: $white_color;
+                    line-height: 42px;
+                    margin-top: 55px;
+
+                    @media screen and (max-width: 570px) {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+
+                .item__subtitle{
+                    margin-top: 10px;
+                    font-family: 'SF Pro Display', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+                    opacity: 0.3;
+
+                    @media screen and (max-width: 570px) {
+                        font-size: 15px;
+                        line-height: 20px;
+                    }
+                }
+
+                .item__text{
+                    font-family: 'SF Pro Display', sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 25px;
+                    line-height: 30px;
+                    color: rgba(255, 255, 255, 0.7);
+
+                    @media screen and (max-width: 570px) {
+                        font-size: 15px;
+                        line-height: 20px;
+                    }
+
+                    ul{
+                        margin: 0;
+                        padding: 0;
+                        li{
+                            margin: 0;
+                            padding: 0;
+                            list-style: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
