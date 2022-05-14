@@ -1,0 +1,123 @@
+@import './settings/colors';
+@import './settings/fonts';
+
+header{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    
+    .header__wraper{
+        padding: 30px 92px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+        @media screen and (max-width: 560px) {
+            padding: 10px 32px;
+        }
+
+        .logo__wrapper{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            .text_logo{
+                margin-left: 8px;
+                display: inline;
+                color: $white_color;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 25px;
+                line-height: 34px;
+                font-family: 'Nunito', sans-serif;
+
+                .red_color{
+                    color: $red_color;
+                }
+
+                @media screen and (max-width: 1680px) {
+                    font-size: 20px;
+                }
+
+                @media screen and (max-width: 324px) {
+                    display: none;
+                }
+            }
+        }
+
+        .navs_wrapper{
+
+            .header__navs{
+
+                .header__nav{
+                    font-family: 'SF Pro Display', sans-serif;
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 17px;
+                    line-height: 20px;
+                    align-items: center;
+                    color: $white_color;
+                    opacity: 0.8;
+                    margin: 0px 5px;
+
+                    @media screen and (max-width: 1680px) {
+                        font-size: 13px;
+                    }
+
+                    @media screen and (max-width: 1455px) {
+                        font-size: 10px;
+                    }
+
+                    @media screen and (max-width: 1215px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .btn_wrapper{
+
+            i{
+                padding: 10px;
+                background-color: grey;
+                border-radius: 5px;
+                color: $white_color;
+
+                @media screen and (min-width: 1215px) {
+                    display: none;
+                }
+            }
+
+            .header_btn{
+                font-family: 'SF Pro Display', sans-serif;
+                padding: 11px 30px;
+                background-color: $btn_red_color;
+                border-radius: 10px;
+                border: none;
+
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 18px;
+                color: $white_color;
+
+                @media screen and (max-width: 1680px) {
+                    font-size: 11px;
+                }
+
+                @media screen and (max-width: 1215px) {
+                    display: none;
+                }
+            }
+
+        }
+    }
+}
+

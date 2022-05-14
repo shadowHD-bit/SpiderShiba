@@ -1,0 +1,250 @@
+.game{
+    width: 100%;
+    height: auto;
+
+
+    .game__wrapper{
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .game__company{
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding-top: 50px;
+            z-index: 2;
+
+            .game__company_items{
+
+
+                .game__company_item{
+                    margin: 0px 5px;
+
+                    img{
+                        transition: 0.9s;
+                    }
+
+                    img:hover{
+                        opacity: 1 !important;
+                        transition: 0.9s;
+                    }
+                }
+            }
+        }
+
+        .game__web{
+            position: relative;
+            width: 100%;
+            height: auto;
+
+            .img__web{
+                position: relative;
+                width: 100%;
+                height: 1150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .glow_effect{
+                    position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    box-shadow:
+
+                        0 0 140px 90px #143d85;
+                    
+                    animation: glow 6s infinite;
+                }
+
+                @keyframes glow {
+                    0%{
+                        box-shadow: 0 0 140px 90px #143d85;
+                    
+                    }
+                    50%{
+                        box-shadow: 0 0 140px 190px #143d85;
+                    
+                    }
+                    100%{
+                        box-shadow: 0 0 140px 90px #143d85;
+                    
+                    }
+                }
+
+                .web{
+                    position: absolute;
+                }
+
+                .earth{
+                    position: absolute;
+                }
+
+                .doggi{
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+
+                    .goo-btn{
+                        background-color: $red_color;
+                        padding: 15px 45px;
+                        font-family: 'SF Pro Display', sans-serif;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 22px;
+                        line-height: 26px;
+                        border-radius: 10px;
+                        width: 215px;
+                        margin-top: 10px;
+                        border: none;
+                        color: $white_color;
+                    }
+                }
+
+                .circle_items{
+                    position: absolute;
+                    width:130px;
+                    height:130px;
+
+                    .itemsOne{
+                        width:50px;
+                        height:50px;
+                        background:#0096F2;
+                        border-radius:50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: $white_color;
+                        position:absolute;
+                        top:0; bottom:0; left:0;right:0;
+                        overflow:hidden;
+                        margin:auto;
+                        box-shadow: 0 0 110px 40px rgb(28, 68, 138);
+                        animation: circle 15s linear infinite, growing1 3s infinite;
+                    }
+
+                    @keyframes growing1 {
+                        0%{
+                            box-shadow: 0 0 110px 10px rgb(57, 90, 151);                        
+                        }
+                        50%{
+                            box-shadow: 0 0 110px 50px rgb(57, 90, 151);                        
+                        }
+                        100%{
+                            box-shadow: 0 0 110px 10px rgb(57, 90, 151);                        
+                        }
+                    }
+
+                    @keyframes circle{
+                    0%{
+                        transform:rotate(0deg)
+                                translate(-335px)
+                                rotate(0deg);
+
+                        
+                    }
+                    100%{
+                        transform:rotate(360deg)
+                                translate(-335px)
+                                rotate(-360deg);
+                        }
+
+                    }
+
+
+                    .itemsTwo{
+                        width:50px;
+                        height:50px;
+                        background: #E11D2E;
+                        border-radius:50%;
+                        position:absolute;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: $white_color;
+                        top:0; bottom:0; left:0;right:0;
+                        overflow:hidden;
+                        margin:auto;
+                        animation: circle2 15s linear infinite, growing2 5s infinite;
+                    }
+
+                    @keyframes circle2{
+                    0%{
+                        transform:rotate(0deg)
+                                translate(250px, -255px)
+                                rotate(0deg);
+                        
+                        }
+                    100%{
+                        transform:rotate(360deg)
+                                translate(250px, -255px)
+                                rotate(-360deg);
+                        }
+
+                    }
+
+                    @keyframes growing2 {
+                        0%{
+                            box-shadow: 0 0 110px 10px rgb(129, 3, 3);                        
+                        }
+                        50%{
+                            box-shadow: 0 0 110px 50px rgb(129, 3, 3);                        
+                        }
+                        100%{
+                            box-shadow: 0 0 110px 10px rgb(129, 3, 3);                        
+                        }
+                    }
+
+
+                    .itemsThree{
+                        width:50px;
+                        height:50px;
+                        background: #FF9429;
+                        border-radius:50%;
+                        position:absolute;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: $white_color;
+                        top:0; bottom:0; left:0;right:0;
+                        overflow:hidden;
+                        margin:auto;
+                        animation: circle3 15s linear infinite, growing3 8s infinite;
+                    }
+
+                    @keyframes growing3 {
+                        0%{
+                            box-shadow: 0 0 110px 10px rgb(160, 157, 2);                        
+                        }
+                        50%{
+                            box-shadow: 0 0 110px 50px rgb(160, 157, 2);                        
+                        }
+                        100%{
+                            box-shadow: 0 0 110px 10px rgb(160, 157, 2);                        
+                        }
+                    }
+
+                    @keyframes circle3{
+                    0%{
+                        transform:rotate(0deg)
+                                translate(250px, 250px)
+                                rotate(0deg);
+                        
+                        }
+                    100%{
+                        transform:rotate(360deg)
+                                translate(250px, 250px)
+                                rotate(-360deg);
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

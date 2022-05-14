@@ -1,0 +1,395 @@
+.lazy__content{
+    padding-top: 200px;
+    background: linear-gradient(260.81deg, #162758 2.47%, #0A142A 97.49%);
+    height: auto;
+    position: relative;
+    padding-bottom: 170px;
+
+    
+
+    @media screen and (max-width: 480px) {
+        padding-top: 100px;;
+    }
+
+
+    .first__blur{
+        position: absolute;
+        width: 693.3px;
+        height: 694px;
+        left: 912.01px;
+        top: 106px;
+
+        background: radial-gradient(33.58% 33.57% at 50% 50%, rgba(225, 29, 46, 0.5) 0%, rgba(255, 81, 96, 0.155) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        filter: blur(100px);
+        border-radius: 1000px;
+        z-index: 0;
+
+        @media screen and (max-width: 1650px) {
+            left: 712.01px;
+        }
+
+        @media screen and (max-width: 1410px) {
+            width: 493.3px;;
+        }
+        @media screen and (max-width: 1290px) {
+            display: none;
+        }
+        
+    }
+
+    .second__blur{
+        position: absolute;
+        width: 355.64px;
+        height: 356px;
+        left: -29.04px;
+        top: -87px;
+
+        background: radial-gradient(34.94% 34.94% at 50% 50%, #E11D2E 0%, rgba(255, 81, 96, 0.58) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        opacity: 0.4;
+        filter: blur(100px);
+        border-radius: 1000px;
+
+        @media screen and (max-width: 1785px) {
+            left: -129.04px;
+        }
+
+    }
+
+    .third__blur{
+        position: absolute;
+        width: 422.58px;
+        height: 423px;
+        left: -73px;
+        top: 438px;
+
+        background: radial-gradient(34.94% 34.94% at 50% 50%, #E11D2E 0%, rgba(255, 81, 96, 0.58) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        opacity: 0.4;
+        filter: blur(100px);
+        border-radius: 1000px;
+
+        @media screen and (max-width: 1785px) {
+            left: 1243.28px;
+        }
+
+        @media screen and (max-width: 1650px) {
+            left: 1043.28px;
+        }
+        @media screen and (max-width: 1470px) {
+            left: 843.28px;
+        }
+        @media screen and (max-width: 1290px) {
+            display: none;
+        }
+    }
+
+    .four__blur{
+        position: absolute;
+        width: 122.88px;
+        height: 123px;
+        left: 1643.28px;
+        top: 644px;
+
+        background: radial-gradient(34.94% 34.94% at 50% 50%, #E11D2E 0%, rgba(255, 81, 96, 0.58) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        filter: blur(100px);
+        border-radius: 1000px;
+
+        @media screen and (max-width: 1785px) {
+            left: 1443.28px;
+        }
+        @media screen and (max-width: 1575px) {
+            display: none;
+        }
+    }
+
+    .end_run_string{
+        position: absolute;
+        bottom: 0;
+        background: #5A4039;
+        width: 100%;
+        z-index: 20;
+        height: 38px;
+        display: flex;
+        align-items: center;
+
+        .marquee{
+            
+            .text_runnig{
+                color: rgba(255, 247, 0, 0.76);
+                font-family: 'SF Pro Display',sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 16px;
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .five__blur{
+        position: absolute;
+        width: 295.7px;
+        height: 296px;
+        left: 1446.48px;
+        top: 202px;
+
+        background: radial-gradient(34.94% 34.94% at 50% 50%, #E11D2E 0%, rgba(255, 81, 96, 0.58) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        filter: blur(100px);
+        border-radius: 1000px;
+
+        @media screen and (max-width: 1785px) {
+            left: 1246.48px;
+        }
+
+        @media screen and (max-width: 1575px) {
+            left: 1043.28px;
+        }
+
+        @media screen and (max-width: 1410px) {
+            display: none;
+        }
+
+
+    }
+
+    .lazy__wrapper{
+        display: flex;
+        flex-direction: row;
+        padding: 0px 90px;
+
+        @media screen and (max-width: 590px) {
+            padding: 0px 50px;
+        }
+
+
+        .img__content__after{
+            display: none;
+            @media screen and (max-width: 1290px) {
+                display: contents;
+            }
+
+            img{
+                @media screen and (max-width: 1290px) {
+                    width: 70%;
+                }  
+            }
+        }
+
+
+        .infos__content{
+            width: 50%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            @media screen and (max-width: 1290px) {
+                align-items: center;
+            } 
+
+            @media screen and (max-width: 1785px) {
+                width: 100%;
+            }
+
+            .title__lazy{
+                font-family: 'SF Pro Display', sans-serif;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 80px;
+                line-height: 90px;
+                color: $white_color;
+
+                .red-color{
+                    color: $red_color;
+                }
+
+                @media screen and (max-width: 1650px) {
+                    font-size: 60px;
+                    line-height: 60px;
+
+                }
+
+                @media screen and (max-width: 480px) {
+                    font-size: 40px;
+                    line-height: 40px;
+                }
+            }
+
+            .subtitle__lazy{
+                font-family: 'SF Pro Display', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 30px;
+                color: $dark-grey;
+                margin-top: 10px;
+
+                p{
+                    margin: 0;
+                }
+
+                @media screen and (max-width: 1650px) {
+                    font-size: 20px;
+                }
+            }
+
+            .text__lazy{
+                font-family: 'SF Pro Display', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 38px;
+                margin-top: 40px;
+                color: $light-grey;
+
+                @media screen and (max-width: 1650px) {
+                    font-size: 25px;
+                }
+
+                @media screen and (max-width: 1290px) {
+                    margin-bottom: 30px;
+                }
+
+                p{
+                    margin: 0;
+                }
+            }
+
+            .btn__lazy{
+                margin-top: 46px;
+
+                display: flex;
+                flex-direction: row;
+
+                @media screen and (max-width: 730px) {
+                    flex-direction: column;
+                }
+
+                .btn-red{
+                    color: $white_color;
+                    background-color: $red_color;
+                    padding: 25px 55px;
+                    border-radius: 10px;
+                    border: none;
+                    margin-right: 25px;
+                    font-family: 'SF Pro Display', sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 25px;
+                    line-height: 30px;
+
+                    @media screen and (max-width: 1650px) {
+                        font-size: 20px;
+                    }
+
+                    @media screen and (max-width: 1440px) {
+                        padding: 20px 35px;
+                    }
+                    @media screen and (max-width: 730px) {
+                        margin-bottom: 10px;
+                        width: 100%;
+                    }
+                }
+
+                .btn-grey{
+                    background: rgba(255, 255, 255, 0.05);
+                    border-radius: 10px;
+                    font-family: 'SF Pro Display', sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 26px;
+                    padding: 25px 55px;
+                    border: none;
+                    color: $white_color;
+                    @media screen and (max-width: 1650px) {
+                        font-size: 18px;
+                    }
+
+                    @media screen and (max-width: 1440px) {
+                        padding: 20px 35px;
+                    }
+                }
+            }
+
+            .adresscode_lazy{
+                border: 1px solid rgba(255, 255, 255, 0.09);
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 13px;
+                padding-top: 14px;
+                padding-left: 30px;
+                margin-top: 20px;
+                width: 680px;
+
+                @media screen and (max-width: 1650px) {
+                    width: 100%;
+                }
+
+                .mini-badge{
+                    font-family: 'SF Pro Display',sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: rgba(255, 255, 255, 0.2);
+
+                    @media screen and (max-width: 480px) {
+                        font-size: 9px;
+                    }
+                }
+
+                .this-adress{
+                    font-family: 'SF Pro Display', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 25px;
+                    line-height: 30px;
+                    color: rgba(255, 255, 255, 0.4);
+
+                    @media screen and (max-width: 1650px) {
+                        font-size: 20px;
+                    }
+
+                    @media screen and (max-width: 690px) {
+                        font-size: 15px;
+                    }
+
+                    @media screen and (max-width: 480px) {
+                        font-size: 12px;
+                    }
+
+                    @media screen and (max-width: 360px) {
+                        font-size: 9px;
+                    }
+                }
+            }
+        }
+
+
+        .img__content{
+            width: 50%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+
+            @media screen and (max-width: 1290px) {
+                display: none;
+            }
+
+            img{
+                z-index: 10;
+
+                @media screen and (max-width: 1650px) {
+                    width: 80%;
+                }
+
+                // @media screen and (max-width: 1680px) {
+                //     font-size: 20px;
+                // }
+            }
+        }
+    }
+}
