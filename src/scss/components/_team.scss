@@ -1,0 +1,147 @@
+
+.team{
+    width: 100%;
+    height: auto;
+    background: #162344;
+
+    .team__wrapper{
+        padding: 0px 170px;
+        display: flex;
+        flex-direction: column;
+
+
+        @media screen and (max-width: 700px) {
+            padding: 0px 20px;
+        }
+        .title__team{
+            text-align: center;
+            width: 100%;
+            font-family: 'SF Pro Display', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 60px;
+            color: #FFFFFF;
+            margin-bottom: 60px;
+            margin-top: 60px;
+        }
+
+        .team__slider{
+            width: 100%;
+            position: relative;
+            height: auto;
+
+            .slide{
+                display: flex;
+                flex-direction: column;
+                
+                .img{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .name{
+                        font-family: 'SF Pro Display', sans-serif;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 30px;
+                        line-height: 36px;
+                        margin-top: 10px;
+                        color: #FFFFFF;
+                    }
+
+                    .who{
+                        font-family: 'SF Pro Display';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 22px;
+                        line-height: 26px;
+                        color: #FFFFFF;
+                        margin-top: 5px;
+                        opacity: 0.6;
+                    }
+                }
+            }
+
+            .slick-dots{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-top: 40px;
+
+                button{
+                    visibility: hidden;
+                }
+
+                li::marker{
+                    position: relative;
+                    color: gray;
+                    font-size: 30px;
+                }
+
+                .slick-active::marker{
+                    background-color: red;
+                    color: red;
+                }
+            }
+
+        }
+
+
+        .team_investors{
+
+            display: flex;
+            flex-direction: column;
+
+            .title{
+                margin-top: 30px;
+                font-family: 'SF Pro Display', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 60px;
+                text-align: center;
+                color: #FFFFFF;
+                margin-bottom: 20px;
+
+            }
+
+            .partners_items{
+
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 30px;
+
+                .game__company_items{
+
+                    @media screen and (max-width: 1000px) {
+                        text-align: center;
+    
+                    }
+    
+                    .game__company_item{
+                        margin: 0px 5px;
+    
+                        img{
+                            transition: 0.9s;
+                        }
+    
+                        img:hover{
+                            opacity: 1 !important;
+                            transition: 0.9s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

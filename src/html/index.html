@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SpiderShiba</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
+
+     <!-- Sliders -->
+     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        
 
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/443bba0f5a.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/443bba0f5a.js"
+      crossorigin="anonymous"
+    ></script>
 
-</head>
-<body>
+    <!-- Jquery -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+  </head>
+  <body>
     <!-- Navbar -->
     @@include('components/navbar.html')
 
-      <!-- Main -->
-      <main>
-
-        @@include('components/lazy.html')
-        @@include('components/game.html')
-        @@include('components/works.html')
-        @@include('components/play.html')
-        @@include('components/invest.html')
-        @@include('components/roadmap.html')
-      </main>
+    <!-- Main -->
+    <main>
+      @@include('components/lazy.html') @@include('components/game.html')
+      @@include('components/works.html') @@include('components/play.html')
+      @@include('components/invest.html') @@include('components/roadmap.html')
+      @@include('components/team.html')
+    </main>
 
     <!-- Footer -->
     @@include('components/footer.html')
 
-</body>
+
+        <!-- Sliders -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <script src="slider.js"></script>
+    
+  </body>
 </html>
