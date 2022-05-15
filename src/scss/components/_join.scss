@@ -1,0 +1,123 @@
+.join{
+    width: 100%;
+    height: auto;
+    background-color: #101932;
+    padding-bottom: 50px;
+
+
+    .join__wrapper{
+        padding: 0px 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (max-width: 1400px) {
+            padding: 0px 50px;
+        }
+
+        .title{
+            font-family: 'SF Pro Display', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 60px;
+            margin: 60px 0px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: #FFFFFF;
+        }
+
+        .accordion{
+            width: 100%;
+            height: auto;
+
+            .accordion_item{
+                width: 100%;
+                position: relative;
+                height: auto;
+
+
+
+                input{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    opacity:0;
+                    visibility: 0;
+                  }
+                  h1{
+                    background:#384D70
+                    ;
+                    font-family: 'SF Pro Display', sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 24px;
+                    /* identical to box height */
+                    padding: 25px;
+                    display: flex;
+                    align-items: center;
+                    background: #384D70;
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                    color: #FFFFFF;
+                  }
+                  label::before{
+                    content:"";
+                    display: inline-block;
+                    border: 15px solid transparent;
+                    border-left:20px solid rgb(129, 0, 0);
+                    transition: 0.5s;
+                  }
+                  label{
+                    cursor: pointer;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                  }
+                  div.p{
+                    max-height:0px;
+                    overflow: hidden;
+                    transition:max-height 0.5s;
+                    background-color: #4d6999;
+                    margin-top: -20px;
+                    font-family: 'SF Pro Display',sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 19px;
+                    /* identical to box height */
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    border-bottom-left-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                  }
+                  div.p p {
+                    padding:2em;
+                  }
+                  input:checked ~ h1 label::before{
+                    border-left:15px solid transparent;
+                    border-top:20px solid rgb(129, 0, 0);
+                    margin-top:12px;
+                    margin-right:10px;
+                    transition: 0.5s;
+                  }
+                  input:checked ~ h1 ~ div.p{
+                    max-height:100px;
+                  }
+                  a{
+                    color:#384D70
+                    ;
+                  }
+            }
+        }
+
+
+    }
+}

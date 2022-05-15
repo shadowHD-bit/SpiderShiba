@@ -1,0 +1,176 @@
+.tokenize{
+    height: auto;
+    background: #101D3F;
+    padding: 0px 90px;
+
+    @media screen and (max-width: 480px) {
+        padding: 0px 20px;    }
+
+    .title{
+            
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 60px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 30px 0px;
+    }
+
+    .tokenize__wrapper{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        width: auto;
+        background: #101D3F;
+        height: auto;
+        min-height: 700px;
+
+        @media screen and (max-width: 1300px) {
+            flex-direction: column;
+        }
+
+        .statiscitone{
+            width: 33%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 0;
+            padding-top: 50px;
+            @media screen and (max-width: 1300px) {
+                width: auto;
+                position: relative;
+            }
+    
+
+            .cart{
+                background: #1a022e;
+                border-radius: 15px;
+                width: auto;
+                height: auto;
+                padding: 30px;
+                margin: 10px 0px;
+
+                .title{
+                    font-family: 'SF Pro Display', sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 27px;
+                    line-height: 32px;
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 0;
+                    color: #FFFFFF;
+                }
+
+                .text{
+                    font-family: 'SF Pro Display', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+                    display: flex;
+                    align-items: center;
+
+                    color: #FFFFFF;
+
+                    opacity: 0.3;
+                }
+            }
+        }
+
+        .statistictwo{
+            width: 33%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 0;
+            padding-top: 50px;
+            @media screen and (max-width: 1300px) {
+                width: auto;
+                position: relative;
+                padding-bottom: 50px;
+                padding-top: 0px;
+            }
+
+
+            .cart{
+                background: #1a022e;
+                border-radius: 15px;
+                width: auto;
+                height: auto;
+                padding: 30px;
+                margin: 10px 0px;
+                .title{
+                    font-family: 'SF Pro Display', sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 27px;
+                    line-height: 32px;
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 0;
+
+                    color: #FFFFFF;
+                }
+
+                .text{
+                    font-family: 'SF Pro Display', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+                    display: flex;
+                    align-items: center;
+
+                    color: #FFFFFF;
+
+                    opacity: 0.3;
+                }
+            }
+        }
+
+        .chart{
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            position: relative;
+            height: auto;
+            background-image: url(images/team/gog.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+
+            @media screen and (max-width: 1300px) {
+                width: 100%;
+            }
+
+            @media screen and (max-width: 480px) {
+                background-size: 50%;
+            }
+
+
+            .img{
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                bottom: 10%;
+            }
+
+            canvas{
+                width: auto;
+                height: auto;
+
+            }
+        }
+
+
+
+    }
+}

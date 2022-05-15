@@ -1,0 +1,133 @@
+.last{
+    width: 100%;
+    height: auto;
+    padding: 30px 0px;
+    background-color: #162758;
+    background-image: url(images/team/bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: color;
+    .last__wrapper{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .title{
+            font-family: 'SF Pro Display', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 60px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 60px;
+            color: #FFFFFF;
+
+            @media screen and (max-width: 770px) {
+                font-size: 30px;
+            line-height: 40px;
+            }
+
+        }
+
+        .social{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 60px;
+            width: auto;
+            height: auto;
+            flex-wrap:wrap;
+
+            
+
+            a{
+                margin: 5px 20px;
+                width: 108px;
+                height: 108px;
+                background: #E11D2E;
+                border-radius: 15px;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                
+                i{
+                    transform: scale(2.5);
+                }
+
+                @media screen and (max-width: 770px) {
+                    width: 78px;
+                    height: 78px;
+                }
+            }
+        }
+
+        .img{
+            margin-bottom: 60px;
+
+        }
+
+        .code{
+            width: auto;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 50px;
+            padding: 20px 55px;
+
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 100px;
+
+            @media screen and (max-width: 500px) {
+                padding: 10px 10px;
+
+            }
+
+            .sub{
+                font-family: 'SF Pro Display', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+                margin-bottom: 10px;
+                color: rgba(255, 255, 255, 0.4);
+
+                @media screen and (max-width: 770px) {
+                    font-size: 10px;
+                    line-height: 13px;
+                }
+
+                @media screen and (max-width: 500px) {
+                    font-size: 5px;
+                line-height: 8px;
+                }
+            }
+
+            .this{
+                font-family: 'SF Pro Display', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 30px;
+                color: rgba(255, 255, 255, 0.8);
+
+                @media screen and (max-width: 770px) {
+                    font-size: 15px;
+                    line-height: 18px;
+                }
+
+                @media screen and (max-width: 500px) {
+                    font-size: 10px;
+                line-height: 12px;
+                }
+            }
+        }
+
+
+
+    }
+}

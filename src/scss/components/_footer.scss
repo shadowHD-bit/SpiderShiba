@@ -1,0 +1,30 @@
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #0D1428;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span{
+        font-family: 'SF Pro Display', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #FFFFFF;
+
+        opacity: 0.4;
+
+        @media screen and (max-width: 500px) {
+            font-size: 10px;
+        line-height: 14px;
+        }
+    }
+}
