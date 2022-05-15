@@ -32,6 +32,11 @@
         text-decoration: none;
         opacity: 0.8;
         margin: 10px 0px;
+        cursor: pointer;
+    }
+
+    a:hover{
+        color: #b6b6b6fa;
     }
 
     .btn_wrapper{
@@ -108,7 +113,13 @@ header{
 
         .navs_wrapper{
 
+            
+
             .header__navs{
+
+                .header__nav:hover{
+                    color: #b6b6b6fa;
+                }
 
                 .header__nav{
                     font-family: 'SF Pro Display', sans-serif;
@@ -156,7 +167,7 @@ header{
                 background-color: $btn_red_color;
                 border-radius: 10px;
                 border: none;
-
+                cursor: pointer;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 15px;
@@ -170,6 +181,10 @@ header{
                 @media screen and (max-width: 1215px) {
                     display: none;
                 }
+            }
+
+            .header_btn:hover{
+                background-color: rgb(68, 0, 0);
             }
 
         }

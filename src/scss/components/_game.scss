@@ -61,10 +61,13 @@
                 color: $white_color;
 
                 @media screen and (max-width: 970px) {
-                    top: -290px;
+                    top: -270px;
                     width: 290%;
                     right: -100%;
+                }
 
+                @media screen and (max-width: 349px) {
+                    display: none;
                 }
 
                 .doggi_text{
@@ -75,6 +78,11 @@
                     line-height: 32px;
                     align-items: center;
                     text-align: center;
+
+                    @media screen and (max-width: 970px) {
+                        margin-top: 40px;
+                        font-size: 15px;
+                    }
       
                 }
             }
@@ -189,7 +197,13 @@
                         }
                     }
 
+                    .goo-btn:hover{
+                        background-color: rgb(68, 0, 0);
+
+                    }
+
                     .goo-btn{
+                        cursor: pointer;
                         background-color: $red_color;
                         padding: 15px 45px;
                         font-family: 'SF Pro Display', sans-serif;
@@ -202,6 +216,8 @@
                         margin-top: 10px;
                         border: none;
                         color: $white_color;
+
+                        
 
                         @media screen and (max-width: 570px) {
                             padding: 15px 15px;
