@@ -1,6 +1,60 @@
 @import './settings/colors';
 @import './settings/fonts';
 
+.mobile_navs{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: #384D70;
+    z-index: 1999;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 560px) {
+        margin-top: 70px;
+    }
+    a{
+        text-align: center;
+        font-family: 'SF Pro Display',sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 23px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        
+        color: #FFFFFF;
+        text-decoration: none;
+        opacity: 0.8;
+        margin: 10px 0px;
+    }
+
+    .btn_wrapper{
+        padding-top: 50px;
+        .header_btn_mob{
+            font-family: 'SF Pro Display', sans-serif;
+            padding: 11px 30px;
+            background-color: $btn_red_color;
+            border-radius: 10px;
+            border: none;
+    
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+            color: $white_color;
+            
+        }
+
+    }
+}
+
+
 header{
     width: 100%;
     height: auto;
@@ -20,6 +74,7 @@ header{
         @media screen and (max-width: 560px) {
             padding: 10px 32px;
         }
+
 
         .logo__wrapper{
             display: flex;
