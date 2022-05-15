@@ -14,8 +14,6 @@ ____
 * SCSS
 * SlickSliders
 * FontAwesome 5
-
-
 ___
 
 ### Дополнительно
