@@ -1,0 +1,80 @@
+body{
+    overflow: hidden;
+}
+
+.preloader{
+    position: fixed;
+    z-index: 999;
+    background-color: rgb(27, 18, 59);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/header/digi.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 1s;
+
+    .text_logo{
+        margin-left: 8px;
+        display: inline;
+        color: $white_color;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 25px;
+        line-height: 34px;
+        font-family: 'Nunito', sans-serif;
+        margin-top: 350px;
+        .red_color{
+            color: $red_color;
+        }
+
+        @media screen and (max-width: 1680px) {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 324px) {
+            display: none;
+        }
+    }
+
+    img{
+
+        position: absolute;
+    }
+
+    #one{
+        animation: spin 5s infinite;
+    }
+
+    #two{
+        animation: spin 2s infinite;
+    }
+
+    #three{
+        animation: spin 9s infinite;
+    }
+
+    @keyframes spin {
+        0%{
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(180deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes fadeInFromNone {
+        0% {
+            opacity: 1;
+          }
+        
+          100% {
+            opacity: 0;
+          }
+      }
+}
