@@ -15,7 +15,7 @@ mobileButton.addEventListener('click', () => {
         mobileButton.classList.add('fa-bars')
         win_mobile.style.visibility = 'hidden'
         header.style.backgroundColor = ''
-        document.body.style.overflow = ''
+        document.body.style.overflow = 'visible'
     }
 
 
